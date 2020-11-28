@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 	<title>Feedback Form</title>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">	
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/teams1.css" type="text/css">
+
+</head>
+
+<body>	
+
+<!--<div class="view">
+	<img src="1.svg">
+</div>-->
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			
+			<h1 class="text-center mt-5 font-weight-bold">Feedback</h1>
+			<hr class="bg-white">
+			<h6 class="text-center">Please write your feedback below:</h6>
+			<h3 class="mt-4">How do you rate your overall experience?</h3>
+
+			<form action="http://localhost/formBack.php" target="_blank" method="POST">
+				<label class="radio-inline"><input type="radio" name="experience" value="vd" required>Very Dissatisfied</label>
+				<label class="radio-inline"><input type="radio" name="experience" value="d" required>Dissatisfied</label>
+				<label class="radio-inline"><input type="radio" name="experience" value="n" required>Neutral</label>
+                <label class="radio-inline"><input type="radio" name="experience" value="s" required>Satisfied</label>
+				<label class="radio-inline"><input type="radio" name="experience" value="vs" required>Very Satisfied</label>
+			</div>
+			</div>					
+
+			<div class="row">
+				<div class="col-md-2"></div>
+				<label class="col-md-4">Full Name*<br>
+					<input type="text" id="text" required="" placeholder="Enter Your Name" name="name"></label>
+
+					<label class="col-md-4">Email*<br>
+					<input type="text" id="text" required="" placeholder="Enter Your Mail ID." name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></label>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2"></div>
+				<label class="col-md-4">Current Semester*<br>
+					<input type="text" id="text" required="" placeholder="Enter Your Semester" name="sem" pattern="[1-8]"></label>
+
+					<label class="col-md-4">Phone*<br>
+					<input type="text" id="text" required="" placeholder="Contact Number" name="contact" pattern="[7-9]{1}[0-9]{9}"></label>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2"></div>
+				<label class="col-md-8">Message*<br>
+					<textarea id="message" required="" placeholder="Write yor message here" cols="48" rows="5" name="message"></textarea></label>
+			</div>
+
+			
+
+
+						<div class="row">
+				<div class=""></div>
+				<button class="btn btn-primary" style="width: 100px;margin-left: auto;margin-right: auto;">Submit</button>
+			</div>
+			</form>
+</div>
+
+
+</body>
+</html>  
